@@ -24,7 +24,7 @@ https://github.com/mrpwhite/comps_and_widgets_inc_rails
 `rails db:drop && rails db:migrate && rails db:seed`
 
 ###In Window 3 - Start Ember server on localhost:4200
-- cd into ember app and run the following commands
-	-`npm install`
-	-`bower install`
-	-`ember server --proxy http://localhost:3000`
+- cd into ember app and run the following commands:
+-`npm install`
+-`bower install`
+-`ember server --proxy http://localhost:3000`

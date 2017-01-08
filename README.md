@@ -17,7 +17,7 @@ https://github.com/mrpwhite/comps_and_widgets_inc_rails
 ##Once you have the repo locally on you machine, open three terminal windows.
 ###In Window 1 - start rails server on localhost:3000
 - cd into rails app and run the following command:
-`bin/rails server --binding 0.0.0.0`
+`bundle install && bin/rails server --binding 0.0.0.0`
 
 ###In Window 2 - drop, migrate and seed db
 - cd into rails app and run the following command:

@@ -1,11 +1,11 @@
 #Run App Locally
 ## App runs with the following specs
-ember-cli: 2.10.0
-rails: 5.0.1
-ruby: 2.2.3p173
-node: 6.2.0
-bower: 1.8.0
-npm: 4.0.5
+- ember-cli: 2.10.0
+- rails: 5.0.1
+- ruby: 2.2.3p173
+- node: 6.2.0
+- bower: 1.8.0
+- npm: 4.0.5
 
 ##You will need two repos to run this application, be sure to clone both locally
 Ember App:

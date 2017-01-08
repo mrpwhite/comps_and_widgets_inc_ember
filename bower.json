@@ -1,0 +1,12 @@
+{
+  "name": "things-inc",
+  "dependencies": {
+    "ember": "~2.10.0",
+    "ember-cli-shims": "0.1.3",
+    "bootstrap": "~3.3",
+    "ember-addons.bs_for_ember": "~0.7.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

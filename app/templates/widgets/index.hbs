@@ -1,0 +1,22 @@
+<p>{{#link-to "widgets.new" class="btn btn-success" role="button"}}<span class="  glyphicon glyphicon-plus"></span>  Create a Widget{{/link-to}}</p>
+
+<!-- This button group could potentially be its own component-->
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      	<button type="button" class="btn btn-default" {{action "showGrid"}}><span class="glyphicon glyphicon-th-large"></span> Grid  View</button>
+    </div>
+    <div class="btn-group" role="group">
+      	<button type="button" class="btn btn-default" {{action "showTable"}}><span class="glyphicon glyphicon-th-list"></span> Table View</button>
+    </div>
+</div>
+
+<p></p>
+<div class="row">
+    {{#if (eq widgetsView "grid")}}
+    	{{#each model as |comp|}}
+    			{{product-tile model=comp action="deleteWidget" modelRoute="widget" modelRouteEdit="widgets.edit"}}
+    	{{/each}}
+    {{else if (eq widgetsView "table")}}
+          {{models-table data=model columns=columns}}
+    {{/if}}
+</div>

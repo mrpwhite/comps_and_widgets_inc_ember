@@ -1,0 +1,10 @@
+<div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+		<div class="caption">
+			<h3>{{model.name}}</h3>
+			{{#link-to modelRoute model class="btn btn-default"}}See Details{{/link-to}}
+			{{#link-to modelRouteEdit model class="btn btn-primary"}}<span class="glyphicon glyphicon-edit"></span> Edit{{/link-to}}
+			<button class="btn btn-danger" onclick={{action 'delete'}}><span class="glyphicon glyphicon-trash"></span> Delete</button>
+		</div>
+	</div>
+</div>

@@ -15,3 +15,5 @@ test('it renders', function(assert) {
   assert.equal(this.$('.panel-body h2').text().trim(), 'emberJs');
   assert.equal(this.$('.panel-body p').text().trim(), 'testing is easy');
 });
+
+

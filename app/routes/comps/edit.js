@@ -19,7 +19,7 @@ export default Ember.Route.extend({
 		saveComponent(component){
 			component.save().then(() =>{
 				return this.transitionTo('component', component.get('id'));
-			})
+			});
 		}
 	}
 });

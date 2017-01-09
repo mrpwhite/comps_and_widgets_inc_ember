@@ -1,6 +1,6 @@
-// import { moduleFor, test } from 'ember-qunit';
+// // import { moduleFor, test } from 'ember-qunit';
 
-// moduleFor('route:widgets', 'Unit | Route | widgets', {
+// moduleFor('route:component/idex', 'Unit | Route | component/edit', {
 //   // Specify the other units that are required for this test.
 //   // needs: ['controller:foo']
 // });

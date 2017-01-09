@@ -14,7 +14,7 @@ export default Ember.Route.extend({
 					propertyName: "description",
 					title: "Description"
 				}
-			])
+			]);
 	},
 	actions:{
 		showGrid(){

@@ -6,20 +6,13 @@ moduleForComponent('product-form', 'Integration | Component | product form', {
 });
 
 test('it renders', function(assert) {
+  assert.expect(2);
+  this.set('model', {
+    name: "xmas Tree",
+    description: "It is green still!"
+  });
+  this.render(hbs`{{product-form model=model}}`);
 
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
-  this.render(hbs`{{product-form}}`);
-
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#product-form}}
-      template block text
-    {{/product-form}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('.form-horizontal .name').val(), 'xmas Tree');
+  assert.equal(this.$('.form-horizontal .description').val(), 'It is green still!');
 });

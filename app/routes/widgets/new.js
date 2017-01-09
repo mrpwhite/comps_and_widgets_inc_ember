@@ -20,7 +20,7 @@ export default Ember.Route.extend({
 			const controller = this.controllerFor('widgets/new');
 			controller.set('didSave', true);
 			newComp.save().then(() => {
-				alert('You succesfully created a widget');
+				alert('Successfully created widget');
 				this.transitionTo('widgets');
 			});
 		},
